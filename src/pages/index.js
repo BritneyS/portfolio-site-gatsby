@@ -5,12 +5,13 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
+import "../assets/css/index-styles.css"
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <h1 className="intro-heading"><span role="img" aria-label="wave">👋</span> Hi, <br />I'm Britney</h1>
+    <h2 className="intro-subheader">I'm a software developer who builds apps for the web and iOS. Nice to meet you!</h2>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
