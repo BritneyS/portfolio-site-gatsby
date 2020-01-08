@@ -16,10 +16,10 @@ import { Apps, CloudDownload } from "@material-ui/icons";
 import { FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
 
 // core components
-import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx";
-import Button from "components/CustomButtons/Button.jsx";
+import CustomDropdown from "../CustomDropdown/CustomDropdown"
+import Button from "../CustomButtons/Button"
 
-import headerLinksStyle from "assets/jss/material-kit-react/components/headerLinksStyle.jsx";
+import headerLinksStyle from "../../assets/jss/material-kit-react/components/headerLinksStyle"
 
 function HeaderLinks({ ...props }) {
   const { classes } = props;
