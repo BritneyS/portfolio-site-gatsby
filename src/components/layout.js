@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 //import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./Header/Header"
+import HeaderLinks from "./Header/HeaderLinks"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -26,7 +27,16 @@ const Layout = ({ children }) => {
   return (
     <>
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-      <Header siteTitle="My Portfolio" />
+        <Header
+        color="primary"
+        brand="Britney Smith"
+        rightLinks={<HeaderLinks />}
+        fixed
+        changeColorOnScroll={{
+          height: 400,
+          color: "white"
+        }}
+        />
       <div
         style={{
           margin: `0 auto`,
