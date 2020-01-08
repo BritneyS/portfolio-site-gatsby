@@ -16,6 +16,8 @@ import Menu from "@material-ui/icons/Menu";
 // core components
 import headerStyle from "../../assets/jss/material-kit-react/components/headerStyle"
 
+import { Link } from "gatsby"
+
 class Header extends React.Component {
   constructor(props) {
     super(props);
@@ -73,7 +75,9 @@ class Header extends React.Component {
       [classes.absolute]: absolute,
       [classes.fixed]: fixed
     });
-    const brandComponent = <Button className={classes.title}>{brand}</Button>;
+    const brandComponent = <Button className={classes.title}>
+                            <Link to="/" style={{ textDecoration: `none` }}>{brand}</Link>
+                          </Button>;
     return (
       <AppBar className={appBarClasses}>
         <Toolbar className={classes.container}>
