@@ -25,38 +25,34 @@ class Header extends React.Component {
       mobileOpen: false
     };
     this.handleDrawerToggle = this.handleDrawerToggle.bind(this);
-    this.headerColorChange = this.headerColorChange.bind(this);
+    this.headerBoxShadowChange = this.headerBoxShadowChange.bind(this);
   }
   handleDrawerToggle() {
     this.setState({ mobileOpen: !this.state.mobileOpen });
   }
   componentDidMount() {
-    if (this.props.changeColorOnScroll) {
-      window.addEventListener("scroll", this.headerColorChange);
+    if (this.props.changeBoxShadowOnScroll) {
+      window.addEventListener("scroll", this.headerBoxShadowChange);
     }
   }
-  headerColorChange() {
-    const { classes, color, changeColorOnScroll } = this.props;
+
+  headerBoxShadowChange() {
+    const { classes, changeBoxShadowOnScroll } = this.props;
     const windowsScrollTop = typeof window !== 'undefined' && window.pageYOffset;
-    if (windowsScrollTop > changeColorOnScroll.height) {
+    if (windowsScrollTop > changeBoxShadowOnScroll.height) {
       document.body
-        .getElementsByTagName("header")[0]
-        .classList.remove(classes[color]);
-      document.body
-        .getElementsByTagName("header")[0]
-        .classList.add(classes[changeColorOnScroll.color]);
+      .getElementsByTagName("header")[0]
+      .classList.remove(classes.noShadow);
     } else {
-      document.body
+        document.body
         .getElementsByTagName("header")[0]
-        .classList.add(classes[color]);
-      document.body
-        .getElementsByTagName("header")[0]
-        .classList.remove(classes[changeColorOnScroll.color]);
+        .classList.add(classes.noShadow);
     }
   }
   componentWillUnmount() {
-    if (this.props.changeColorOnScroll) {
-      typeof window !== 'undefined' && window.removeEventListener("scroll", this.headerColorChange);
+    if (this.props.changeBoxShadowOnScroll) {
+      typeof window !== 'undefined'
+      && window.removeEventListener("scroll", this.headerBoxShadowChange);
     }
   }
   render() {
@@ -73,13 +69,14 @@ class Header extends React.Component {
       [classes.appBar]: true,
       [classes[color]]: color,
       [classes.absolute]: absolute,
-      [classes.fixed]: fixed
+      [classes.fixed]: fixed,
+      [classes.noShadow]: true
     });
     const brandComponent = <Button className={classes.title}>
                             <Link to="/" style={{ textDecoration: `none` }}>{brand}</Link>
                           </Button>;
     return (
-      <AppBar className={appBarClasses}>
+      <AppBar className={appBarClasses} elevation={0}>
         <Toolbar className={classes.container}>
           {leftLinks !== undefined ? brandComponent : null}
           <div className={classes.flex}>
@@ -153,19 +150,8 @@ Header.propTypes = {
   // changeColorOnScroll.height and then when it is smaller than
   // changeColorOnScroll.height change it back to
   // this.props.color (see above)
-  changeColorOnScroll: PropTypes.shape({
-    height: PropTypes.number.isRequired,
-    color: PropTypes.oneOf([
-      "primary",
-      "info",
-      "success",
-      "warning",
-      "danger",
-      "transparent",
-      "white",
-      "rose",
-      "dark"
-    ]).isRequired
+  changeBoxShadowOnScroll: PropTypes.shape({
+    height: PropTypes.number.isRequired
   })
 };
 

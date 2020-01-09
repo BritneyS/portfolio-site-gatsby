@@ -27,16 +27,15 @@ const Layout = ({ children }) => {
   return (
     <>
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-        <Header
-        color="primary"
-        brand="Britney Smith"
-        rightLinks={<HeaderLinks />}
-        fixed
-        changeColorOnScroll={{
-          height: 400,
-          color: "white"
-        }}
-        />
+      <Header
+      color="primary"
+      brand="Britney Smith"
+      rightLinks={<HeaderLinks />}
+      fixed
+      changeBoxShadowOnScroll={{
+        height: 32,
+      }}
+      />
       <div
         style={{
           margin: `0 auto`,
