@@ -7,7 +7,12 @@ import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
 
 // React icons
-import { FaTwitter, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import {
+  FaTwitter,
+  FaLinkedin,
+  FaEnvelope,
+  FaDev
+} from 'react-icons/fa';
 
 // core components
 import Button from "../CustomButtons/Button"
@@ -53,24 +58,6 @@ function HeaderLinks({ ...props }) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Tooltip
-          id="linkedin-tooltip"
-          title="Find me on LinkedIn"
-          placement={typeof window !== 'undefined' && window.innerWidth > 959 ? "top" : "left"}
-          classes={{ tooltip: classes.tooltip }}
-        >
-          <Button
-            color="transparent"
-            href="https://www.linkedin.com/in/smithbritney/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={classes.navLink}
-          >
-            <FaLinkedin/>
-          </Button>
-        </Tooltip>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Tooltip
           id="twitter-tooltip"
           title="Find me on Twitter"
           placement={typeof window !== 'undefined' && window.innerWidth > 959 ? "top" : "left"}
@@ -83,7 +70,43 @@ function HeaderLinks({ ...props }) {
             color="transparent"
             className={classes.navLink}
           >
-            <FaTwitter/>
+            <FaTwitter />
+          </Button>
+        </Tooltip>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Tooltip
+          id="devto-tooltip"
+          title="Find me on Dev.to"
+          placement={typeof window !== 'undefined' && window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            href="https://dev.to/britneys"
+            target="_blank"
+            rel="noopener noreferrer"
+            color="transparent"
+            className={classes.navLink}
+          >
+            <FaDev />
+          </Button>
+        </Tooltip>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Tooltip
+          id="linkedin-tooltip"
+          title="Find me on LinkedIn"
+          placement={typeof window !== 'undefined' && window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            color="transparent"
+            href="https://www.linkedin.com/in/smithbritney/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={classes.navLink}
+          >
+            <FaLinkedin />
           </Button>
         </Tooltip>
       </ListItem>
@@ -99,7 +122,7 @@ function HeaderLinks({ ...props }) {
             href="mailto: brit.smith7@gmail.com"
             className={classes.navLink}
           >
-            <FaEnvelope/>
+            <FaEnvelope />
           </Button>
         </Tooltip>
       </ListItem>
