@@ -1,8 +1,5 @@
 /*eslint-disable*/
 import React from "react";
-// react components for routing our app without refresh
-import { Link } from "gatsby";
-
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 import List from "@material-ui/core/List";
