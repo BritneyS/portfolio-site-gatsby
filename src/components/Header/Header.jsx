@@ -77,7 +77,7 @@ class Header extends React.Component {
                           </Button>;
     return (
       <AppBar className={appBarClasses} elevation={0}>
-        <Toolbar className={classes.container}>
+        <Toolbar className={classes.container} style={{ padding: "0 0.25rem" }}>
           {leftLinks !== undefined ? brandComponent : null}
           <div className={classes.flex}>
             {leftLinks !== undefined ? (
