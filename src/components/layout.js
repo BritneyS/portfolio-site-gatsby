@@ -11,7 +11,10 @@ import PropTypes from "prop-types"
 
 import Header from "./Header/Header"
 import HeaderLinks from "./Header/HeaderLinks"
+import copy from "../utils/copy"
 import "./layout.css"
+
+const { brandTitle } = copy.Header;
 
 const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`
@@ -29,7 +32,7 @@ const Layout = ({ children }) => {
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <Header
       color="primary"
-      brand="Britney Smith"
+      brand={brandTitle}
       rightLinks={<HeaderLinks />}
       fixed
       changeBoxShadowOnScroll={{
