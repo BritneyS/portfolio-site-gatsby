@@ -18,6 +18,8 @@ import headerStyle from "../../assets/jss/material-kit-react/components/headerSt
 
 import { Link } from "gatsby"
 
+const FULL_HEADER_LINK_SCREEN_WIDTH = 959;
+
 class Header extends React.Component {
   constructor(props) {
     super(props);
@@ -87,7 +89,6 @@ class Header extends React.Component {
     const brandComponent = <Button className={classes.title}>
                             <Link to="/" style={{ textDecoration: `none` }}>{brand}</Link>
                           </Button>;
-    const FULL_HEADER_LINK_SCREEN_WIDTH = 959;
 
     return (
       <AppBar className={appBarClasses} elevation={0}>

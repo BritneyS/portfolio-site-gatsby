@@ -64,6 +64,8 @@ const headerIcons = [
     }
 ];
 
+const FULL_HEADER_LINK_SCREEN_WIDTH = 959;
+
 const HeaderIconItems = ({ ...props }) => {
     const { classes } = props;
     return (
@@ -75,7 +77,7 @@ const HeaderIconItems = ({ ...props }) => {
                         title={headerIcon.tooltipTitle}
                         placement={
                             window &&
-                            window.innerWidth > 959
+                            window.innerWidth > FULL_HEADER_LINK_SCREEN_WIDTH
                             ? "top"
                             : "left"
                         }
