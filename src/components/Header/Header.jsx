@@ -22,15 +22,24 @@ class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      mobileOpen: false
+      mobileOpen: false,
+      screenWidth: 0
     };
     this.handleDrawerToggle = this.handleDrawerToggle.bind(this);
     this.headerBoxShadowChange = this.headerBoxShadowChange.bind(this);
+    this.handleResize = this.handleResize.bind(this);
   }
+
   handleDrawerToggle() {
     this.setState({ mobileOpen: !this.state.mobileOpen });
   }
+
+  handleResize() {
+    this.setState({ screenWidth: window.innerWidth });
+  }
+
   componentDidMount() {
+    window.addEventListener("resize", this.handleResize);
     if (this.props.changeBoxShadowOnScroll) {
       window.addEventListener("scroll", this.headerBoxShadowChange);
     }
@@ -49,12 +58,15 @@ class Header extends React.Component {
         .classList.add(classes.noShadow);
     }
   }
+
   componentWillUnmount() {
+    window.removeEventListener("resize", this.handleResize);
     if (this.props.changeBoxShadowOnScroll) {
       typeof window !== 'undefined'
       && window.removeEventListener("scroll", this.headerBoxShadowChange);
     }
   }
+
   render() {
     const {
       classes,
@@ -75,6 +87,8 @@ class Header extends React.Component {
     const brandComponent = <Button className={classes.title}>
                             <Link to="/" style={{ textDecoration: `none` }}>{brand}</Link>
                           </Button>;
+    const FULL_HEADER_LINK_SCREEN_WIDTH = 959;
+
     return (
       <AppBar className={appBarClasses} elevation={0}>
         <Toolbar className={classes.container} style={{ padding: "0 0.25rem" }}>
@@ -105,7 +119,10 @@ class Header extends React.Component {
           <Drawer
             variant="temporary"
             anchor={"right"}
-            open={this.state.mobileOpen}
+            open={
+              this.state.mobileOpen &&
+              this.state.screenWidth <= FULL_HEADER_LINK_SCREEN_WIDTH
+            }
             classes={{
               paper: classes.drawerPaper
             }}
