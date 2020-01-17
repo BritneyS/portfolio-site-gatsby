@@ -7,3 +7,6 @@
   My portfolio site, built with Gatsby 🚀
 </h1>
 
+## Snapshot 📸
+
+![Portfolio snapshot](https://raw.githubusercontent.com/britneys/britneys.github.io/assets/portfolio-site-snapshot.png)
