@@ -1,0 +1,81 @@
+@import url('main-theme.css');
+
+/* Containers */
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.chevron-down-container {
+    margin: 0px auto;
+    color: var(--purple);
+}
+
+/* Headings */
+.intro-heading {
+    font-family: var(--largeHeaderFontFamily);
+    font-size: 8rem;
+    color: var(--yellow);
+    text-shadow: 6px 6px 0.1px var(--purple);
+}
+
+.intro-subheader {
+    font-family: var(--mainBodyFontFamily);
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--purple);
+    letter-spacing: 0.1rem;
+}
+
+/* Body text */
+.scroll-message {
+    font-family: var(--mainBodyFontFamily);
+    font-size: 1rem;
+    color: var(--purple);
+    text-align: center;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 420px) {
+    .intro-heading {
+        font-size: 7rem;
+        text-shadow: 5px 5px 0.1px var(--purple);
+    }
+}
+
+@media only screen and (max-width: 374px) {
+    .intro-heading {
+        font-size: 6rem;
+        text-shadow: 4px 4px 0.1px var(--purple);
+    }
+}
+
+@media only screen and (max-width: 327px) {
+    .intro-heading {
+        font-size: 5rem;
+        text-shadow: 3px 3px 0.1px var(--purple);
+    }
+}
+
+@media only screen and (max-width: 281px) {
+    .intro-heading {
+        font-size: 4rem;
+        text-shadow: 3px 3px 0.1px var(--purple);
+    }
+}
+
+@media only screen and (max-width: 235px) {
+    .intro-heading {
+        font-size: 3rem;
+        text-shadow: 2px 2px 0.1px var(--purple);
+    }
+}
+
+@media only screen and (max-width: 187px) {
+    .intro-heading {
+        font-size: 2rem;
+        text-shadow: 2px 2px 0.1px var(--purple);
+    }
+}
