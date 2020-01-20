@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+:root {
+    /* colors */
+    --white: #fafafa;
+    --purple: #851de0;
+    --yellow: #ffd700;
+
+    /* fonts */
+    --largeHeaderFontFamily: Lobster, cursive;
+    --mainBodyFontFamily: "Helvetica Neue", Arial, sans-serif;
+}

@@ -10,7 +10,13 @@ import {
   transition,
   boxShadow,
   drawerWidth
-} from "../../material-kit-react"
+} from "../../material-kit-react";
+import mainTheme from "../../../../utils/main-theme";
+
+const {
+  purple,
+  purpleAlpha
+} = mainTheme.colors;
 
 const headerStyle = {
   appBar: {
@@ -67,10 +73,10 @@ const headerStyle = {
   },
   primary: {
     backgroundColor: primaryColor,
-    color: "#851de0",
+    color: purple,
     boxShadow:
-      "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(156, 39, 176, 0.46), " +
-      "0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15)"
+      `0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px ${purpleAlpha}, ` +
+      `0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15)`
   },
   info: {
     backgroundColor: infoColor,
