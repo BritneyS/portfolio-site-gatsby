@@ -9,4 +9,4 @@
 
 ## Snapshot 📸
 
-![Portfolio snapshot](https://raw.githubusercontent.com/britneys/britneys.github.io/assets/portfolio-site-snapshot.png)
+<img width="879" alt="portfolio-site-snapshot" src="https://user-images.githubusercontent.com/8409475/72694841-6a723900-3b04-11ea-99d4-76d757d5deeb.png">
