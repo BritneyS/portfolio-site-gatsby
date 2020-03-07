@@ -7,11 +7,6 @@
     margin-top: 100px;
 }
 
-.chevron-down-container {
-    margin: 0px auto;
-    color: var(--purple);
-}
-
 /* Headings */
 .intro-heading {
     font-family: var(--largeHeaderFontFamily);
@@ -26,14 +21,6 @@
     font-size: 2rem;
     color: var(--purple);
     letter-spacing: 0.1rem;
-}
-
-/* Body text */
-.scroll-message {
-    font-family: var(--mainBodyFontFamily);
-    font-size: 1rem;
-    color: var(--purple);
-    text-align: center;
 }
 
 /* Media queries */
