@@ -27,8 +27,16 @@ const copy = {
         greeting: " Hi,",
         introduction: "I'm Britney",
         subHeadingOne: "I'm a software developer who builds apps for the web and iOS.",
-        subHeadingTwo: "Come check out my projects and say hello!",
-        scrollMessage: "scroll for more!"
+        subHeadingTwo: "Come check out my projects and say hello!"
+    },
+    Separator: {
+        threeDotsLeft: "• • • ",
+        threeDotsRight: " • • •"
+    },
+    Projects: {
+        projectSectionHeader: "Projects",
+        githubLinkTitle: "Github",
+        demoLinkTitle: "Demo"
     }
 };
 
