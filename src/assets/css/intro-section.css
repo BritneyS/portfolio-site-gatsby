@@ -16,7 +16,6 @@
 }
 
 .intro-subheader {
-    font-family: var(--mainBodyFontFamily);
     font-weight: 400;
     font-size: 2rem;
     color: var(--purple);
