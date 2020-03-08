@@ -40,8 +40,6 @@ const HeaderTitleItems = ({ ...props }) => {
                     <Button
                         href={headerTitle.link}
                         color="transparent"
-                        target="_blank"
-                        rel="noopener noreferrer"
                         className={classes.navLink}
                     >
                         {headerTitle.title}
