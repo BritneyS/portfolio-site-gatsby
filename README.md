@@ -8,6 +8,8 @@
 </h1>
 
 ## Snapshot 📸
+<img width="963" alt="Screen Shot 2020-03-08 at 11 50 01 AM" src="https://user-images.githubusercontent.com/8409475/76166184-fc74e600-6132-11ea-9fb5-1dda46c9d42d.png">
+
 <img width="1121" alt="Screen Shot 2020-03-08 at 11 35 49 AM" src="https://user-images.githubusercontent.com/8409475/76165893-03025e00-6131-11ea-96cb-fd7739ea12a2.png">
 
 ![Mar-08-2020 11-39-21](https://user-images.githubusercontent.com/8409475/76165980-98055700-6131-11ea-941f-b9ff6c9dd472.gif)
