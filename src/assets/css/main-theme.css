@@ -5,8 +5,54 @@
     --white: #fafafa;
     --purple: #851de0;
     --yellow: #ffd700;
+    --darkPurple: #2d0a4d;
+    --darkGrey: #414141;
 
     /* fonts */
     --largeHeaderFontFamily: Lobster, cursive;
     --mainBodyFontFamily: "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    font-family: var(--mainBodyFontFamily);
+}
+
+p {
+    color: var(--darkGrey);
+}
+
+a {
+    color: var(--purple);
+}
+
+a:hover {
+    color: var(--darkPurple);
+}
+
+ul {
+    margin: 0;
+}
+
+ul.section-list {
+    list-style-type: none;
+}
+
+.separator {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    color: var(--yellow);
+}
+
+.site-section {
+    margin: 32px 0;
+}
+
+.section-header {
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: var(--purple);
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    text-align: center;
 }

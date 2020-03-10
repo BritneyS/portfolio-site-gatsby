@@ -1,0 +1,31 @@
+/* Containers */
+.container-flex {
+    display: flex;
+}
+
+.icon-link-container {
+    margin-right: 16px;
+}
+
+.icon-link-container:last-child {
+    margin-right: 0;
+}
+
+/* Headings */
+.project-card-heading {
+    color: var(--darkPurple);
+}
+
+/* Items*/
+.project-card-list-item {
+    margin: 64px 0;
+}
+
+.project-card-list-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Links */
+.group-link {
+    padding-left: 4px;
+}
