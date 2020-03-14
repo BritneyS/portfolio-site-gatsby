@@ -15,6 +15,7 @@
 .project-card-name {
     font-size: .875rem;
     font-weight: 500;
+    letter-spacing: 0.275rem;
 }
 
 .project-card-tech {
