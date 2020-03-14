@@ -26,9 +26,11 @@ const CustomProjectCard = ({ project }) => {
     return(
         <>
             <Card>
-            <CardHeader color="primary">{title}</CardHeader>
+            <CardHeader color="primary">
+                <h4 className="project-card-name">{title}</h4>
+            </CardHeader>
             <CardBody>
-                <h4 className="project-card-heading">{techStack}</h4>
+                <h5 className="project-card-tech">{techStack}</h5>
                 <p className="project-card-body">{description}</p>
                 <div className="container-flex">
                     <CustomIconLinkGroup
