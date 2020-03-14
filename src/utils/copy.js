@@ -15,10 +15,12 @@ const copy = {
         emailIconLink: "mailto: brit.smith7@gmail.com"
     },
     HeaderTitleItems: {
+        homeLinkTitle: "Home",
+        homeLink: "#",
+        techLinkTitle: "Tech",
+        techLink: "#tech",
         projectsLinkTitle: "Projects",
         projectsLink: "#projects",
-        resumeLinkTitle: "Resume",
-        resumeLink: "#resume",
         contactLinkTitle: "Contact Me",
         contactLink: "#contact",
     },
