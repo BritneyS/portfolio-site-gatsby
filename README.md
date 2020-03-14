@@ -8,8 +8,6 @@
 </h1>
 
 ## Snapshot 📸
-<img width="963" alt="Screen Shot 2020-03-08 at 11 50 01 AM" src="https://user-images.githubusercontent.com/8409475/76166184-fc74e600-6132-11ea-9fb5-1dda46c9d42d.png">
+<img width="1017" alt="Screen Shot 2020-03-14 at 2 41 41 PM" src="https://user-images.githubusercontent.com/8409475/76688486-9c36e600-6603-11ea-91d3-3a4ffdb32f9c.png">
 
-<img width="1121" alt="Screen Shot 2020-03-08 at 11 35 49 AM" src="https://user-images.githubusercontent.com/8409475/76165893-03025e00-6131-11ea-96cb-fd7739ea12a2.png">
-
-![Mar-08-2020 11-39-21](https://user-images.githubusercontent.com/8409475/76165980-98055700-6131-11ea-941f-b9ff6c9dd472.gif)
+<img width="1056" alt="Screen Shot 2020-03-14 at 3 00 25 PM" src="https://user-images.githubusercontent.com/8409475/76688586-91c91c00-6604-11ea-9dbd-f08ff53a248e.png">

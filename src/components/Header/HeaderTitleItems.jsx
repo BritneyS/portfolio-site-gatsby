@@ -5,24 +5,31 @@ import copy from '../../utils/copy';
 import PropTypes from "prop-types";
 
 const {
+    homeLinkTitle,
+    homeLink,
+    techLinkTitle,
+    techLink,
     projectsLinkTitle,
     projectsLink,
-    resumeLinkTitle,
-    resumeLink,
     contactLinkTitle,
     contactLink
 } = copy.HeaderTitleItems;
 
 const headerTitles = [
     {
+        id: "home",
+        title: homeLinkTitle,
+        link: homeLink,
+    },
+    {
+        id: "tech",
+        title: techLinkTitle,
+        link: techLink,
+    },
+    {
         id: "projects",
         title: projectsLinkTitle,
         link: projectsLink,
-    },
-    {
-        id: "resume",
-        title: resumeLinkTitle,
-        link: resumeLink,
     },
     {
         id: "contact",
