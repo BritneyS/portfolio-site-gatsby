@@ -12,7 +12,14 @@
 }
 
 /* Headings */
-.project-card-heading {
+.project-card-name {
+    font-size: .875rem;
+    font-weight: 500;
+}
+
+.project-card-tech {
+    font-size: 1rem;
+    line-height: 1.1;
     color: var(--darkPurple);
 }
 

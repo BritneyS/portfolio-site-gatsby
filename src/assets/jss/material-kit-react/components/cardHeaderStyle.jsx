@@ -7,7 +7,8 @@ import {
 } from "../../material-kit-react";
 const cardHeaderStyle = {
   cardHeader: {
-    fontWeight: "500",
+    fontSize: ".875rem",
+    fontWeight: "400",
     letterSpacing: "0.275rem",
     borderRadius: "3px",
     padding: "1rem 15px",
